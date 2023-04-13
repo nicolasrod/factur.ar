@@ -1,0 +1,22 @@
+[{
+    "tipo_doc": "DNI", 
+    "nro_doc": 23343434, 
+    "nombre": "Nombre 1", 
+    "domicilio": "Ravignani 1233", 
+    "email": "some1@email.com", 
+    "lineas": [
+        {"horas": 6, "precio": 1500, "descripcion": "Horas de Servicios"}, 
+        {"horas": 4, "precio": 3000, "descripcion": "Horas de Servicios de otra cosa"}, 
+        {"horas": 16, "precio": 5000, "descripcion": "Horas de nada"}
+    ]
+},
+{
+    "tipo_doc": "DNI", 
+    "nro_doc": 31234321, 
+    "nombre": "Nombre 2", 
+    "domicilio": "Carranza 2223", 
+    "email": "some1else@email.com", 
+    "lineas": [
+        {"horas": 20, "precio": 2500, "descripcion": "Servicios Profesionales"}
+    ]
+}]
