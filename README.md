@@ -36,3 +36,12 @@ h = facturar.conectar_AFIP(
 pdf = facturar.generar_factura(h, f, "/home/usuario/Downloads", aceptar_factura=False)
 print(pdf)
 ```
+
+En el repositorio hay una aplicación de ejemplo llamada *facturador_json.py* que toma un archivo JSON con la descripción de factura(s) y generar los 
+comprobantes automaticamente.
+
+```
+$ python3 facturador_json.py datos.json
+```
+
+Los datos necesarios para conectarse a la AFIP se encuentran en el archivo *facturador_json.conf*.
