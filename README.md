@@ -4,7 +4,7 @@ Herramientas para generar facturas via la interfaz de la AFIP usando Selenium.
 
 # Uso
 
-'''python
+```python
 import facturar
 
 # Creamos un diccionario con los datos de la factura
@@ -35,4 +35,4 @@ h = facturar.conectar_AFIP(
 
 pdf = facturar.generar_factura(h, f, "/home/usuario/Downloads", aceptar_factura=False)
 print(pdf)
-'''
+```
