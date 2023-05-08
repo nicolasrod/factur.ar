@@ -45,3 +45,14 @@ $ python3 facturador_json.py datos.json
 ```
 
 Los datos necesarios para conectarse a la AFIP se encuentran en el archivo *facturador_json.conf*.
+
+# Requisitos
+
+- Python 3 instalado
+- Selenium
+
+  ```
+  $ python3 -m pip install selenium
+  ``` 
+
+- ChromeDriver bajado en el directorio actual de la aplicación (https://chromedriver.chromium.org/downloads)
