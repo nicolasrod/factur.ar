@@ -1,5 +1,4 @@
 import os
-import subprocess
 
 from calendar import monthrange
 from datetime import datetime
@@ -7,7 +6,6 @@ from datetime import datetime
 from time import sleep
 
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 
@@ -47,7 +45,7 @@ def dir_diff(t1):
     t2 = dir_snapshot(t1[0], t1[1])
 
     try:
-        return os.path.join(folder, list(set(t2[2]) - set(t1[2]))[0])
+        return os.path.join(t1[0], list(set(t2[2]) - set(t1[2]))[0])
     except:
         return None
 
@@ -192,4 +190,3 @@ def generar_factura(h, ft, download_dir, aceptar_factura=True):
 def anular_factura(h, ft, download_dir):
     ft["tipo_comprobante"] = "4"  # Nota de Credito
     return fill_pagina(h, ft, download_dir)
-
